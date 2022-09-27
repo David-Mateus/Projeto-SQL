@@ -1,0 +1,28 @@
+{
+  "name": "lia_interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "gsap": "^3.10.4",
+    "nodemon": "^2.0.16",
+    "pixi.js": "^6.3.1",
+    "pixi.js-legacy": "^6.3.2"
+  },
+  "devDependencies": {
+    "browserify-livereload": "^1.0.10",
+    "watchify": "^4.0.0"
+  },
+  "scripts": {
+    "code": "watchify -p [ browserify-livereload --host 127.0.0.1 --port 1337 ] js/animation.js -o app.js",
+    "start": "npm i browserify browserify-livereload watchify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mauriciomasj@bitbucket.org/jailsonsdsj/_lia-interface.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jailsonsdsj/_lia-interface#readme"
+}

@@ -1,0 +1,5 @@
+ao utilizar pela primeira vez: npm run start
+
+durante o desenvolvimento: npm run code
+
+para rodar a prática: live server
