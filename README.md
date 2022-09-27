@@ -1,14 +1,10 @@
-# p00-base-architecture
+# p11-Lamina-de-ossos
 
 
-
-Repositório base para iniciar uma prática. 
-
-Todas as configurações já estão pré definidas com seus respectivos padrões.
-
-
+Nome da pratica:
+conteudo da pratica mais imagens e instruções.
 
 Como utilizar:
 
-1. basta clonar o repositório e iniciar o desenvolvimento
+1. Comando basico para rodar 
 2. conferir os comandos iniciais no guide.txt
