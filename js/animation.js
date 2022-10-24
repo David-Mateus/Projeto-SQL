@@ -11,8 +11,8 @@ const texts = require('./texts');
         /* MAIN TIMELINE */
         const mainTimeline = () => {
             const timeline = gsap.timeline();
-            timeline.add(intro(app, resources));
-            timeline.add(footer(app, resources, texts));
+            // timeline.add(intro(app, resources));
+            // timeline.add(footer(app, resources, texts));
             timeline.add(initialPosition());
 
             return timeline;

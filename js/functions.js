@@ -40,7 +40,17 @@ const configureObject = ( app, object, width, height, x, y, moveItem = false, vi
     
     app.stage.addChild(object);
 };
+const configureObject2 = ( app, object, scale, x, y, moveItem = false, visible = true) => {
+    position(app, object, x, y);
+    object.scale.set(scale);
+    if (moveItem) {
+        object.interactive = true;
+        object.buttonMode = true;
+    }
+    object.visible = visible
 
+    app.stage.addChild(object);
+};
 
 class ConfigureText extends PIXI.Text{
     constructor(app,text, x, y, visible = true){
@@ -61,5 +71,6 @@ module.exports = {
     randomNumber,
     randomFloatNumber,
     configureObject,
-    ConfigureText
+    ConfigureText,
+    configureObject2
 }
