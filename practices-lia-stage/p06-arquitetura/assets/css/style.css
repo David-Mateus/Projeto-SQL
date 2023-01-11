@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+@font-face {
+    font-family: 'DS-DIGI';
+    src: url('../fonts/DS-DIGI.TTF');
+}
+
+:root{
+
+  --primary: #334355;
+  --text-default: #ffff;
+  
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#canvas{
+  background-color:red;
+}
+
+.context_canvas {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+}
+/*QUESTIONARY*/
+
+
+form{
+    width: 100%;
+}
+.container:after,
+.row:after,
+.clearfix {
+  content: "";
+  display: table;
+  clear: both; }
+
+*{
+    font-family: 'Barclaycard Co Lt', sans-serif;
+}
+  h1, h2, h3, h4 {
+    font-family: 'Barclaycard Co Lt', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  .form-description{
+      text-align: justify;
+  }
+
+.form-question-title, 
+.form-description, 
+.option-answer, 
+.form-question-answer{
+  color: var(--text-default);
+
+}
+
+.button {
+    font-family: 'Barclaycard Co Lt',Tahoma,sans-serif;
+    margin: 10px 0 0 0;
+    /* float: right; */
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+    padding: 10px 15px;
+    line-height: 18px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: baseline;
+    background: #FFFF;
+    color: var(--primary);
+    text-decoration: none !important;
+    display: inline-block;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transition: background-color 100ms ease-in-out;
+    -moz-transition: background-color 100ms ease-in-out;
+    -o-transition: background-color 100ms ease-in-out;
+    transition: background-color 100ms ease-in-out;
+
+  }
+
+  
+
+  .button:hover {
+    background-color: #059fdb !important;
+    color: white;
+  }
+  .button-previous{
+    float: left;
+  }
+
+  .option-answer{
+      margin: 10px 0;
+  }
+
+
+
+/*DROPZONE*/
+.select-container {
+    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.left, .right {
+    min-height: 150px;
+    display: flex;
+    align-items: top;
+    border-radius: 10px;
+}
+
+.left {
+    background-color: grey;
+}
+.right{
+    background-color: #68b369;
+}
+
+.item{
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 70px;
+    height: 120px;
+}
+.card-img{
+    user-select: none; /*ignora seletor do mouse*/
+    pointer-events: none; /*ignora seletor do mouse*/
+    max-height: 60px;
+    max-width: 60px;
+    margin-bottom: 10px;
+}
+.card-title{
+    font-size:15px;
+}
+
+#canvas{
+    display: inherit;
+}
+#question-2,#question-3,#question-4, #question-1{
+    display: none;
+}
+
+
+.question-default{
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: var(--primary);
+  opacity: 0.9;
+  padding: 30px ;
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+
+}
+
+
+
+.alert{
+  padding: 2px;
+  display:none;
+}
+
+/*EXTRA CLASSES*/
+.showDisplay{
+    display: initial;
+}
+.hideDisplay{
+    display: none;
+}
+
+/*MEDIA QUERY FORM*/
+
+@media (max-width:750px){
+  .select-container{
+    flex-direction: row;
+    align-items: top;
+    
+  }
+  .left,.right{
+    align-content: start;
+    margin: 1px;
+  }
+
+  .right{
+    min-width: 100px;
+  }
+  
+}
+
+
+/*MEDIA QUERY CANVAS*/
+
+@media (orientation: landscape) {
+  #canvas {
+    width: 60%;
+  }
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* :root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+} */
+
+
+html{
+  background-image: url('https://lia-labv.s3.sa-east-1.amazonaws.com/praticas/template/PADR%C3%83O+04.jpg');
+  background-repeat: repeat;
+  background-size:30%;
+  background-position: 50% 0;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  background-color: #082752;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.styleNumber{
+  display: inline-block;
+  color: #fdfeff;
+  text-align: center;
+  background-color: #082752;
+  font-size: 15px;
+  border: solid;
+  border-color: #fdfeff;
+  border-radius: 5px;
+  border-width: 2px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.componente{
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+.styleTitle{
+  align-items: center;
+  text-align: center;
+  color: #fdfeff;
+}
+
+.styleList{
+  padding: 0px;
+}
+
+
+.styleText{
+  display: inline-block;
+  max-width: 200px;
+  white-space: nowrap;
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  line-height: 21px;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 41%;
+  margin-right: 40%;
+}
+
+@media (max-width: 820px)
+{
+  html{
+    padding: 10%;
+  }
+  .container {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .styleText{
+    color: #000000;
+    text-decoration: none;
+    font-size: 8px;
+    margin-right: 0px;
+    line-height: 13px;
+    list-style: none;
+    border-radius: 5px;
+  }
+
+  .styleList{
+    padding: 0px;
+  }
+
+  .logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 32%;
+    }
+
+}
+
+@media (min-width: 821px)
+{
+  .container {
+    max-width: 640px;
+    background-color: #082752;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.9;
+  }
+  
+  .styleNumber{
+    display: inline-block;
+    color: #fdfeff;
+    text-align: center;
+    background-color: #082752;
+    font-size: 15px;
+    border: solid;
+    border-color: #fdfeff;
+    border-radius: 5px;
+    border-width: 2px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .styleText{
+    display: inline-block;
+    max-width: 200px;
+    white-space: nowrap;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    line-height: 21px;
+    list-style: none;
+    border-radius: 5px;
+  }
+  
+  .componente{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+}
+

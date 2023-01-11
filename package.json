@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "@pixi/events": "^7.0.3",
     "browserify": "^17.0.0",
     "gsap": "^3.10.4",
     "nodemon": "^2.0.16",
